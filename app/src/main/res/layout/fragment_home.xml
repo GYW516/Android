@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/bk"
+    tools:context=".fragment.HomeFragment">
+
+    <!--顶部导航栏-->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/AliceBlue"
+        app:title="首页"
+        app:titleTextColor="@color/black"/>
+
+    <!--轮班图 -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="5dp"
+        android:layout_width="@dimen/div_width"
+        android:layout_height="200dp"
+        android:background="@drawable/shift_chart">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            app:banner_radius="20dp"
+            android:layout_width="@dimen/div_width"
+            android:layout_height="200dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--歌曲排行榜-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="@dimen/div_width"
+        android:layout_height="175dp"
+        android:orientation="vertical"
+        android:background="@drawable/rank">
+        <!--听歌记录排行-->
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="听歌记录排行"
+            android:textSize="18sp"/>
+        <!--recycle-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ranking_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--精品推荐-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="@dimen/div_width"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/rd_songs">
+        <!--热门歌曲推荐-->
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门歌曲推荐" />
+        <!--内容-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/hot_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <!--热门歌单推荐-->
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门歌单推荐" />
+        <!--内容-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <!--纯音乐歌单-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/sheet_one"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/mc_3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="纯音乐"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <!--进击的巨人-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/sheet_two"
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bk5">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="进击的巨人"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <!--国产音乐-->
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/sheet_three"
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/bk6">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="国产原风"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

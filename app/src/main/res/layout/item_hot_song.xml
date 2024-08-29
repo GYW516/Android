@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="1dp"
+    app:cardBackgroundColor="@color/white">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--歌曲背景图-->
+        <com.william.widget.RoundImageView
+            android:id="@+id/item_hot_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            app:riv_radius="10dp"
+            android:src="@drawable/mc_1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--歌曲名-->
+            <TextView
+                android:id="@+id/item_hot_title"
+                android:layout_width="70dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="2dp"
+                android:text="钢铁洪流进行曲"
+                android:textSize="10sp" />
+            <!--歌手-->
+            <TextView
+                android:id="@+id/item_hot_singer"
+                android:layout_width="70dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:layout_below="@id/item_hot_title"
+                android:text="纯音乐"
+                android:textSize="10sp" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/item_hot_singer"
+                android:gravity="center">
+                <!--收藏按钮-->
+                <ImageView
+                    android:id="@+id/item_hot_collect"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_toRightOf="@id/item_hot_singer"
+                    android:background="@drawable/c_no" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+</androidx.cardview.widget.CardView>

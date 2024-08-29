@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_wel"
+    tools:context=".WelComeActivity">
+
+    <!--倒计时-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#80000000"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="25dp">
+
+        <TextView
+            android:id="@+id/countDown"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#80000000"
+            android:gravity="center"
+            android:text="4s"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <!--logo-->
+    <com.william.widget.RoundImageView
+        android:id="@+id/wel_logo"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/xtl"
+        app:riv_bottomRight_radius="30dp"
+        app:riv_topLeft_radius="30dp" />
+
+   <!--简单文本-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_below="@id/wel_logo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="WELCOME"
+        android:textSize="40sp"/>
+
+
+</RelativeLayout>

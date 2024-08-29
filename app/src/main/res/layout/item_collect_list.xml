@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="10dp"
+    app:contentPadding="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="1dp"
+    app:cardBackgroundColor="@color/WhiteSmoke">
+
+    <!--item里的具体信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--歌曲背景图片-->
+        <com.william.widget.RoundImageView
+            android:id="@+id/item_collect_img"
+            app:riv_radius="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/mc_1"/>
+        <!--歌曲名字-->
+        <TextView
+            android:id="@+id/item_collect_title"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="钢铁洪流进行曲"
+            android:textSize="15sp"/>
+        <!--歌手-->
+        <TextView
+            android:id="@+id/item_collect_singer"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="纯音乐"
+            android:textSize="15sp"/>
+        <!--我喜欢的音乐列表-->
+        <ImageView
+            android:id="@+id/collect_like"
+            android:layout_marginLeft="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/navi_like_no" />
+        <!--取消收藏-->
+        <ImageView
+            android:id="@+id/collect_cancel"
+            android:layout_marginLeft="15dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/navi_cancel"
+            app:tint="@color/LightSkyBlue"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

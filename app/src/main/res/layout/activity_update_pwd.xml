@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/gradient_universal"
+    tools:context=".UpdatePwdActivity">
+
+    <!--顶部导航栏-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/change_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/gradient_universal"
+        app:title="修改密码"
+        app:titleTextColor="@color/black"
+        app:navigationIcon="@drawable/navi"/>
+
+    <!--请输入用户名-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="10dp"
+        android:layout_width="@dimen/div_width"
+        android:background="@drawable/login_et_bg"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/account"/>
+        <EditText
+            android:id="@+id/up_et_account"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入用户名"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--请输入新密码-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="@dimen/div_width"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_et_bg"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/pwt"/>
+        <EditText
+            android:id="@+id/up_et_newPwd"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入新密码"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!--请确认新密码-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="@dimen/div_width"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_et_bg"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/pwt"/>
+        <EditText
+            android:id="@+id/up_et_confirm"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请确认新密码"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:textSize="15sp"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--确认修改按钮-->
+    <Button
+        android:id="@+id/up_bt_confirm"
+        android:layout_marginTop="20dp"
+        android:layout_width="@dimen/div_width"
+        android:layout_height="50dp"
+        android:background="@drawable/rouned_button"
+        android:textSize="20sp"
+        android:text="确认修改"/>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

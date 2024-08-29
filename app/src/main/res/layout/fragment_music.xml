@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_music"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bk"
+    tools:context=".fragment.MusicFragment">
+
+    <!--顶部导航栏-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/music_bar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/teal_700">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="My Favorite Music "
+            android:textSize="20dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--歌单列表-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/music_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/music_bottom"
+        android:layout_below="@id/music_bar"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <!--底部播放按钮-->
+    <RelativeLayout
+        android:id="@+id/music_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+        <!--歌曲图片-->
+        <com.william.widget.RoundImageView
+            android:id="@+id/m_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/mc_1"
+            app:riv_radius="5dp" />
+        <!--歌曲名称-->
+        <TextView
+            android:id="@+id/m_title"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/m_photo"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="钢铁洪流进行区"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <!--音乐转动符-->
+        <com.william.widget.RoundImageView
+            android:id="@+id/CD"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/m_title"
+            android:src="@drawable/m_disk" />
+        <!--歌曲播放开关-->
+        <com.william.widget.RoundImageView
+            android:id="@+id/m_pause_on"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/m_title"
+            android:src="@drawable/m_pause" />
+        <!--歌曲播放列表-->
+        <com.william.widget.RoundImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/m_pause_on"
+            android:src="@drawable/m_list" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

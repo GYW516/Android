@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/gradient_universal"
+    tools:context=".AboutAppActivity">
+
+    <!--顶部导航栏-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_about"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/gradient_universal"
+        app:title="关于APP"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/navi"/>
+
+    <!--app简单介绍-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="@dimen/div_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/about_app">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="维塔斯 Version1.0"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <!--作者介绍-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="@dimen/div_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/about_app">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="戎美尔"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/author"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <!--具体功能介绍-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="@dimen/div_width"
+        android:layout_height="match_parent"
+        android:background="@drawable/about_app">
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="功能介绍"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/item_ability_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

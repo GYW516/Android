@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGray"
+    tools:context=".MusicCdActivity">
+
+
+    <!--顶部导航栏-->
+    <RelativeLayout
+        android:id="@+id/cd_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkGray">
+        <!--导航栏图标-->
+        <ImageView
+            android:id="@+id/cd_navi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/navi" />
+        <!--歌曲名称-->
+        <TextView
+            android:id="@+id/cd_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="钢铁洪流进行曲"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <!--歌曲类型或作者-->
+    <TextView
+        android:id="@+id/cd_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cd_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="纯音乐"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <!--中间歌曲图片-->
+    <RelativeLayout
+        android:id="@+id/cd_liner_image"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_below="@id/cd_singer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cd_circle_image">
+        <!--中间的背景图片-->
+        <com.william.widget.RoundImageView
+            android:id="@+id/cd_image"
+            android:layout_width="340dp"
+            android:layout_height="340dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/mc_1"
+            app:riv_radius="170dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/cd_one"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cd_liner_image">
+        <!--文字-->
+        <TextView
+            android:id="@+id/cd_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="appreciate a composition"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="20sp" />
+        <!--收藏按钮-->
+        <ImageView
+            android:id="@+id/collect"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/cd_text"
+            android:src="@drawable/navi_like_no" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cd_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cd_one"
+        android:layout_marginTop="70dp">
+        <!--歌曲的初始状态以及播放后动向-->
+        <TextView
+            android:id="@+id/cd_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/cd_seekBar"
+            android:text="00:00"
+            android:textColor="@color/white" />
+        <!--进度条-->
+        <SeekBar
+            android:id="@+id/cd_seekBar"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <!--歌曲的总时长-->
+        <TextView
+            android:id="@+id/cd_static"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cd_seekBar"
+            android:text="00:00"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cd_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+        <!--上一首按钮-->
+        <ImageView
+            android:id="@+id/cd_previous"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/navi_previous" />
+        <!--暂停按钮-->
+        <ImageView
+            android:id="@+id/cd_pause"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/navi_pause" />
+        <!--下一首按钮-->
+        <ImageView
+            android:id="@+id/cd_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/navi_next" />
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

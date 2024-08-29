@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable-anydpi/home.xml" value="0.155" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.161" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/about_app.xml" value="0.146" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/avatar.xml" value="0.15" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/call_button.xml" value="0.167" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/call_msg.xml" value="0.146" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/call_service.xml" value="0.146" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/call_small.xml" value="0.146" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/cd_circle_image.xml" value="0.127" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/divider.xml" value="0.15" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/father.xml" value="0.15" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/gradient_login.xml" value="0.15" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/gradient_universal.xml" value="0.1" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/gradient_wel.xml" value="0.15" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1405" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/login_et_bg.xml" value="0.1435" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/msg_right.xml" value="0.146" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/radius.xml" value="0.155" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/rank.xml" value="0.155" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/rd_songs.xml" value="0.155" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/rouned_button.xml" value="0.155" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/service.xml" value="0.1405" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/shift_chart.xml" value="0.1" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/star.xml" value="0.15" />
+        <entry key="..\:/dev/android/code/app/src/main/res/drawable/universal.xml" value="0.15" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/activity_about_app.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/activity_admin.xml" value="0.2" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/activity_call_service.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/activity_first.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/activity_music.xml" value="0.1" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/activity_music_cd.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/activity_music_list.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/activity_private_policy.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/activity_system_notify.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/activity_update_pwd.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/activity_wel_come.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/fragment_mine.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/fragment_music.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/item_ability.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/item_call_chat.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/item_chat_left.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/item_chat_right.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/item_collect_list.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/item_hot_song.xml" value="0.8" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/item_local_music.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/item_rank_list.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/item_sheet_list.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/linearlayout.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/login.xml" value="0.264" />
+        <entry key="..\:/dev/android/code/app/src/main/res/layout/register.xml" value="0.1" />
+        <entry key="..\:/dev/android/code/app/src/main/res/menu/navigation.xml" value="0.20555555555555555" />
+        <entry key="..\:/dev/android/code/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1175" />
+        <entry key="..\:/dev/android/code/app/src/main/res/xml/network_security_config.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

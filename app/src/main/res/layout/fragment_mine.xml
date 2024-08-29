@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/bk"
+    tools:context=".fragment.MineFragment">
+
+    <!--顶部导航栏-->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/AliceBlue"
+        app:title="我的"
+        app:titleTextColor="@color/black"/>
+
+    <!--头像/名称/简介-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="@dimen/div_width"
+        android:gravity="center"
+        android:layout_height="140dp"
+        android:background="@drawable/starbk">
+
+        <com.william.widget.RoundImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:riv_topRight_radius="20dp"
+            app:riv_bottomLeft_radius="20dp"
+            android:src="@drawable/xtl"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="戎美尔"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="这个人很懒，什么也没留下~"
+                android:textColor="@color/LightGrey"
+                android:textSize="16sp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="10dp"
+        android:layout_width="@dimen/div_width"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:background="@drawable/starbk">
+        <!--我的收藏-->
+        <RelativeLayout
+            android:id="@+id/system_notify"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="我的收藏"
+                android:textColor="@color/black" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/navi" />
+        </RelativeLayout>
+        <!--分割线-->
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/divider"/>
+        <!--喜欢列表-->
+        <RelativeLayout
+            android:id="@+id/privacy_policy"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="喜欢列表"
+                android:textColor="@color/black" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/navi" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--系统通知+隐私政策+关于APP-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="10dp"
+        android:layout_width="@dimen/div_width"
+        android:layout_height="175dp"
+        android:orientation="vertical"
+        android:background="@drawable/starbk">
+        <!--修改密码-->
+        <RelativeLayout
+            android:id="@+id/change_pwd"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:text="修改密码" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/navi" />
+        </RelativeLayout>
+        <!--分割线-->
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/divider"/>
+        <!--联系客服-->
+        <RelativeLayout
+            android:id="@+id/call_service"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="联系客服"
+                android:textColor="@color/black" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/navi" />
+        </RelativeLayout>
+        <!--分割线-->
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/divider"/>
+        <!--关于app-->
+        <RelativeLayout
+            android:id="@+id/about_APP"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:text="关于APP"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/navi" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--退出登录-->
+    <Button
+        android:id="@+id/back_app"
+        android:layout_marginTop="50dp"
+        android:layout_width="@dimen/div_width"
+        android:layout_height="50dp"
+        android:background="@drawable/rouned_button"
+        android:textSize="20dp"
+        android:text="退出登录"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

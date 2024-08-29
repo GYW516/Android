@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/gradient_universal"
+    tools:context=".SystemNotifyActivity">
+
+    <!--顶部导航栏-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/notify_system"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/gradient_universal"
+        app:title="我的收藏"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/navi"/>
+
+    <!--我收藏的音乐-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">维塔斯</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">维塔斯APP是一款专为本地音乐爱好者设计的音乐播放器应用。无论您是在工作、学习还是休闲时，维塔斯都能为您提供高品质的音乐体验。这款应用拥有直观简洁的用户界面，让您可以轻松浏览和播放您的音乐收藏。</string>
+    <string name="author">我叫阿维，网名是戎美尔，是维塔斯音乐播放器的作者。我于2024年4月22日开始了这个应用的开发，并致力于不断拓展其功能。作为一名热爱音乐和技术的开发者，我将自己的激情投入到了维塔斯的开发中，希望为用户提供一款优质的本地音乐播放器。在我的努力下，维塔斯不断更新迭代，不断提升用户体验，成为了许多音乐爱好者的首选应用之一。我将继续努力，为用户带来更多更好的功能和体验，让维塔斯成为用户音乐生活中的重要伙伴。</string>
+</resources>
